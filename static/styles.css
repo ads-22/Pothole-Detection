@@ -1,0 +1,135 @@
+body {
+  background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+  background-image: url('bg_image.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.heading{
+  margin: auto;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  background-clip: text;
+  width: fit-content;
+  border-radius: 20px;
+}
+.check{
+  align-self: center;
+  margin: auto;
+  padding: auto;
+  padding-bottom: 1%;
+}
+.form-container {
+  width: 500px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #444;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #444;
+  background-color: #f0f0f0;
+  transition: background-color 0.2s;
+}
+
+.form-input:focus {
+  background-color: #e0e0e0;
+  outline: none;
+}
+
+.form-button {
+  background-color: #f7acbc;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.form-button:hover {
+  background-color: #e98ea7;
+}
+
+.form-error {
+  color: #d9534f;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.map { 
+  height: 80vh;
+  width: 80%;
+  margin: 10% 5%;
+}
+
+.side-button {
+  position: fixed;
+  top: 2%;
+  left: 9px;
+  width: 50px;
+  height: 50px;
+  /* background-color: #333; */
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  transition-delay: 0.1s;
+  z-index: 9999;
+}
+
+.side-button span {
+  color: #fff; /* Set the color of the + symbol to white */
+  font-size: 24px;
+}
+
+.side-button:hover {
+  left: 0;
+  width: 120px;
+}
+
+.side-button .icon {
+  font-size: 24px;
+  transition: all 0.2s ease-in-out;
+}
+
+.side-button:hover .icon {
+  transform: rotate(45deg);
+}
+
+.side-button .text {
+  margin-left: 10px;
+  font-size: 14px;
+  transition: all 0.2s ease-in-out;
+  white-space: nowrap;
+  opacity: 0;
+}
+
+.side-button:hover .text {
+  margin-left: 20px;
+  opacity: 1;
+}
