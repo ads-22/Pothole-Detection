@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Map Example</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+     crossorigin=""/>
+     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+     integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+     crossorigin=""></script>
+  <!-- <style>
+	
+    #mapid { height: 500px; }
+  </style> -->
+</head>
+<body>
+	<div class="check">
+		<h2 class="heading">This is the best route possible from your {{src}} to {{dest}}</h2>
+		<a href="." class="side-button">
+			<span class="icon" style="color: white;"> + </span>
+			<span class="text">Home</span>
+		</a>
+	</div>
+	<iframe class="map", src="/map"></iframe>	  
+  <!-- <div id="mapid"></div>
+  <h3>{{x}}</h3> -->
+  <!-- <script>
+    var mymap = L.map('mapid').setView([51.505, -0.09], 13);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+        '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+        'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+      maxZoom: 18
+    }).addTo(mymap);
+	
+	var jsonfile = JSON.parse('{{x|safe}}');
+  	console.log(jsonfile);
+    var latlng = jsonfile['route']
+	var source = jsonfile['start_point']
+	var destination = jsonfile['end_point']
+    // var source = [28.650218, 77.302705899]; // Replace with actual source coordinates
+    // var destination = [28.5225511, 77.3561383]; // Replace with actual destination coordinates
+
+    var redIcon = L.icon({
+        iconUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon-2x-blue.png',
+  iconSize: [25, 41],
+  iconAnchor: [12, 41],
+  popupAnchor: [0, -41]
+});
+
+    var marker = L.marker(source,  { icon: redIcon }).addTo(mymap);
+    var marker = L.marker(destination, {color: 'green'}).addTo(mymap);
+    var route = L.polyline([source, destination], {color: 'blue'}).addTo(mymap);
+    mymap.fitBounds(route.getBounds());
+  </script> --> -->
+</body>
+</html>
