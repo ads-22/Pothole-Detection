@@ -6,9 +6,7 @@ This repository contains a solution approach for the problem of detecting and lo
 ## Problem Description
 
 Potholes on roads can be hazardous for vehicles and drivers, leading to accidents and damages. Detecting and locating potholes in real-time can help drivers avoid these hazards and improve road safety. Additionally, providing an optimized route that minimizes the number of potholes can enhance the driving experience.
-## Problem Description
 
-Potholes on roads can be hazardous for vehicles and drivers, leading to accidents and damages. Detecting and locating potholes in real-time can help drivers avoid these hazards and improve road safety. Additionally, providing an optimized route that minimizes the number of potholes can enhance the driving experience.
 ## Solution Approach
 
 The solution approach for detecting and locating potholes on roads and suggesting the best route to avoid them consists of the following steps:
